@@ -1,0 +1,228 @@
+<sdf version='1.6'>
+	<world name='default'>
+	<gravity>0 0 -9.8</gravity>
+
+
+		<!-- <model name='part0.obj'>
+			<static>1</static>
+			<pose frame=''>0 0 0 0 0 0</pose>
+			<link name='link_d0'>
+			<inertial>
+			<mass>0</mass>
+			<inertia>
+			<ixx>0.166667</ixx>
+			<ixy>0</ixy>
+			<ixz>0</ixz>
+			<iyy>0.166667</iyy>
+			<iyz>0</iyz>
+			<izz>0.166667</izz>
+			</inertia>
+			</inertial>
+			<visual name='visual'>
+				<geometry>
+				<mesh>
+					<scale>1 1 1</scale>
+					<uri>part0.obj</uri>
+				</mesh>
+				</geometry>
+			<material>
+				<ambient>1 1 1 1</ambient>
+				<diffuse>1.00000 1.00000 1.000000 1</diffuse>
+				<specular>0.1 .1 .1 1</specular>
+				<emissive>0 0 0 0</emissive>
+			 </material>
+			 </visual>
+			 </link>
+			</model> -->
+
+		<!-- <model name='part0.obj'>
+			<static>1</static>
+			<pose frame=''>1.5 0 0 0 0 0</pose>
+			<link name='link_d0'>
+				<inertial>
+					<mass>0</mass>
+					<inertia>
+						<ixx>0.166667</ixx>
+						<ixy>0</ixy>
+						<ixz>0</ixz>
+						<iyy>0.166667</iyy>
+						<iyz>0</iyz>
+						<izz>0.166667</izz>
+					</inertia>
+				</inertial>
+				<collision name='collision_0'>
+					<geometry>
+						<plane>
+							<normal>0 0 1</normal>
+							<size>10 10</size>
+						</plane>						
+					</geometry>
+				</collision>							
+			</link>
+		</model> -->
+
+		<model name='part1.obj'>
+			<static>1</static>
+			<pose frame=''>1.5 0 0 0 0 0</pose>
+			<link name='link_d1'>
+				<inertial>
+					<mass>100</mass>
+					<inertia>
+						<ixx>0.166667</ixx>
+						<ixy>0</ixy>
+						<ixz>0</ixz>
+						<iyy>0.166667</iyy>
+						<iyz>0</iyz>
+						<izz>0.166667</izz>
+					</inertia>
+				</inertial>
+				<collision name='collision_1'>
+					<geometry>
+						<plane>
+							<normal>0 0 1</normal>
+							<size>10 10</size>
+						</plane>
+						<!-- <box>
+							<size>10 10 0.0</size>
+						</box> -->
+					</geometry>
+				</collision>
+				<visual name='visual'>
+					<geometry>
+						<box>
+							<size>10 10 0</size>
+						</box>
+					</geometry>	
+				</visual>				
+			</link>
+		</model>
+
+		<model name='part2.obj'>
+			<static>1</static>
+			<pose frame=''>11.5 0 0 0 0 0</pose>
+			<link name='link_d2'>
+				<inertial>
+					<mass>0</mass>
+					<inertia>
+						<ixx>0.166667</ixx>
+						<ixy>0</ixy>
+						<ixz>0</ixz>
+						<iyy>0.166667</iyy>
+						<iyz>0</iyz>
+						<izz>0.166667</izz>
+					</inertia>
+				</inertial>
+				<collision name='collision_2'>
+					<geometry>
+						<box>
+							<size>10 10 0</size>
+						</box>
+						<!-- <plane>
+							<normal>0 0 1</normal>
+							<size>10 10</size>
+						</plane>											  -->
+					</geometry>
+				</collision>
+				<visual name='visual2'>
+					<geometry>
+						<box>
+							<size>10 10 0.0</size>
+						</box>						
+					</geometry>					
+				</visual>
+			</link>
+		</model>
+
+		<!-- <model name='part2.obj'>
+			<static>1</static>
+			<pose frame=''>0 0 0 0 0 0</pose>
+			<link name='link_d2'>
+			<inertial>
+			<mass>0</mass>
+			<inertia>
+			<ixx>0.166667</ixx>
+			<ixy>0</ixy>
+			<ixz>0</ixz>
+			<iyy>0.166667</iyy>
+			<iyz>0</iyz>
+			<izz>0.166667</izz>
+			</inertia>
+			</inertial>
+			
+			<visual name='visual'>
+				<geometry>
+				<mesh>
+					<scale>1 1 1</scale>
+					<uri>part2.obj</uri>
+				</mesh>
+				</geometry>
+			<material>
+				<ambient>1 0 0 1</ambient>
+				<diffuse>0.000000 0.500000 0.000000 1</diffuse>
+				<specular>0.4 0.4 0.4 1</specular>
+				<emissive>0 0 0 0</emissive>
+			 </material>
+			 </visual>
+			 </link>
+			</model> -->
+<!-- 
+		<model name="box">
+			<static>1</static>
+			<pose>0 0 -0.5 0 0 0</pose>
+			
+			<link name="body">
+
+				<inertial>
+					<mass>0</mass>
+					<inertia>
+						<ixx>0.166667</ixx>
+						<ixy>0</ixy>
+						<ixz>0</ixz>
+						<iyy>0.166667</iyy>
+						<iyz>0</iyz>
+						<izz>0.166667</izz>
+					</inertia>
+				</inertial>
+
+				<collision name="collision1">
+					<geometry>
+						<box>
+						<size>10 10 1</size>
+						</box>
+					</geometry>
+					<surface>
+						<friction>
+						<ode>
+							<mu>10.8</mu>
+							<mu2>10.8</mu2>
+							<fdir1>0.000000 0.000000 0.000000</fdir1>
+						</ode>
+						</friction>
+
+						<contact>
+						<ode>
+							<soft_cfm>0.000000</soft_cfm>
+							<soft_erp>0.200000</soft_erp>
+							<kp>100000.000000</kp>
+							<kd>1.000000</kd>
+							<max_vel>100.000000</max_vel>
+							<min_depth>0.001000</min_depth>
+						</ode>
+						</contact>
+
+					</surface>
+				</collision>
+
+				<visual name="visual1">
+					<geometry>
+						<box>
+						<size>10 10 1</size>
+						</box>
+					</geometry>
+				</visual>
+
+			</link>
+		</model> -->
+
+	</world>
+</sdf>
